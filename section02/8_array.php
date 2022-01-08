@@ -11,3 +11,7 @@ echo "<br>";
 print_r($arrayList);
 echo "<br>";
 echo $arrayList[2];
+
+$arr = ['nome' => 'Zé', 'idade' => 26];
+
+echo $arr['nome'];
