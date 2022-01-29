@@ -13,7 +13,7 @@ include_once("templates/header.php");
                         <h1 class="m-0">
                             <a href="#">
 								<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-								    <title>Ellie</title>
+								    <title>Home</title>
 								    <defs>
 								        <linearGradient x1="0%" y1="0%" y2="100%" id="logo-a">
 								            <stop stop-color="#4353FF" offset="0%"/>
@@ -50,17 +50,19 @@ include_once("templates/header.php");
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0 is-revealing">PHP Landing Page</h1>
 	                        <p class="hero-paragraph is-revealing" align="justify">Template utilizado para praticar e aplicar as ferramentas de  PHP em aplicações WEB. Insira seus dados para conhecer a aplicação :)</p>
-							<div class="hero-form field field-grouped is-revealing">
-	                            <div class="control control-expanded">
-	                                <input class="input" type="name" name="name" placeholder="Nome">
-	                            </div>
-								<div class="control control-expanded">
-	                                <input class="input" type="name" name="surname" placeholder="Sobrenome">
-	                            </div>
-								<div class="control">
-	                                <a class="button button-primary button-block" href="<?= $BASE_URL ?>contato.php">Enviar</a>
+							<form action="contato.php" method="POST">
+								<div class="hero-form field field-grouped is-revealing">
+									<div class="control control-expanded">
+										<input class="input" type="name" name="Name" placeholder="Nome">
+									</div>
+									<div class="control control-expanded">
+										<input class="input" type="name" name="Surname" placeholder="Sobrenome">
+									</div>
+									<div class="control">
+										<input class="button button-primary button-block" type="submit" value="Enviar">
+									</div>
 								</div>
-	                        </div>
+							</form>
 						</div>
 						<div class="hero-illustration">
 							<div class="hero-bg">
@@ -351,7 +353,7 @@ include_once("templates/header.php");
 		                                </div>
 		                                <h4 class="feature-title m-0">GET</h4>
 									</div>
-	                                <p class="text-sm mb-0" align="justify">A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design elements.</p>
+	                                <p class="text-sm mb-0" align="justify">Método de requisição que permite obter os dados armazenados.</p>
 	                            </div>
 	                        </div>
 							<div class="feature">
@@ -368,7 +370,7 @@ include_once("templates/header.php");
 		                                </div>
 		                                <h4 class="feature-title m-0">POST</h4>
 									</div>
-	                                <p class="text-sm mb-0" align="justify">A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design elements.</p>
+	                                <p class="text-sm mb-0" align="justify">Método de requisição que permite armazenar ou atualizar dados.</p>
 	                            </div>
 	                        </div>
 							<div class="feature">
@@ -387,7 +389,7 @@ include_once("templates/header.php");
 		                                </div>
 		                                <h4 class="feature-title m-0">ROUTES</h4>
 									</div>
-	                                <p class="text-sm mb-0" align="justify">A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design elements.</p>
+	                                <p class="text-sm mb-0" align="justify">As rotas dão dinamicidade para que a aplicação não fique restrita a apenas uma janela.</p>
 	                            </div>
 	                        </div>
 						</div>
