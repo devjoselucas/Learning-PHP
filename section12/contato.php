@@ -48,8 +48,8 @@ include_once("templates/header.php");
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0 is-revealing">PHP Landing Page</h1>
-	                        <p class="hero-paragraph is-revealing" align="justify">Template utilizado para praticar e aplicar as ferramentas de  PHP em aplicações WEB. Insira seus dados para conhecer a aplicação :)</p>
+	                        <h1 class="hero-title mt-0 is-revealing">Rota</h1>
+	                        <p class="hero-paragraph is-revealing">Template utilizado para praticar e aplicar as ferramentas de  PHP em aplicações WEB.</p>
 							<div class="hero-form field field-grouped is-revealing">
 	                            <div class="control control-expanded">
 	                                <input class="input" type="name" name="name" placeholder="Nome">
@@ -58,7 +58,7 @@ include_once("templates/header.php");
 	                                <input class="input" type="name" name="surname" placeholder="Sobrenome">
 	                            </div>
 								<div class="control">
-	                                <a class="button button-primary button-block" href="<?= $BASE_URL ?>contato.php">Enviar</a>
+	                                <a class="button button-primary button-block" href="<?= $BASE_URL ?>index.php">Enviar</a>
 								</div>
 	                        </div>
 						</div>
